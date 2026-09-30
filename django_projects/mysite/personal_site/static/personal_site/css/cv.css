@@ -1,0 +1,149 @@
+/* cv.css — load this AFTER style.css */
+
+/* ── Page wrapper ── */
+.cv-wrapper {
+  margin: 2rem 2rem 4rem;
+}
+
+/* ── CV Header ── */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 4px solid var(--color-primary);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  display: inline;
+}
+
+.cv-contact {
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ── Two-column grid ── */
+.cv-body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0 40px;
+}
+
+/* ── Section label (left rail) ── */
+.cv-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  border-top: 2px solid var(--color-primary);
+}
+
+/* ── Section content (right column) ── */
+.cv-section {
+  padding-bottom: 2rem;
+  border-top: 2px solid var(--color-primary);
+}
+
+/* ── Entries ── */
+.cv-entry {
+  margin-bottom: 1.25rem;
+}
+
+.cv-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv-entry-org {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cv-entry-date {
+  font-size: 0.8rem;
+  color: #888;
+  white-space: nowrap;
+}
+
+.cv-entry-role {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+
+/* ── Skills grid ── */
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+}
+
+.cv-skills-grid li {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* ── Publications ── */
+.cv-pub {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cv-pub:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Awards ── */
+.cv-award-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* ── Override default link style inside CV ──
+   The site's global `a` adds a thick border-bottom which
+   looks odd in dense reference text like a CV. */
+.cv-body a:not(.btn--remix):link,
+.cv-body a:not(.btn--remix):visited {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-label {
+    padding-bottom: 0.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .cv-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

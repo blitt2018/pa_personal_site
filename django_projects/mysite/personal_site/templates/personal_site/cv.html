@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>CV — Ben Litterer</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'personal_site/css/style.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'personal_site/css/cv.css' %}"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="links">
+    <a href="{% url 'index' %}">Ben Litterer</a>
+    <span class="divider">|</span>
+    <a href="{% url 'cv' %}">cv</a>
+  </div>
+</header>
+
+<div class="wrapper">
+<div class="content">
+
+  <div class="cv-wrapper">
+
+    <!-- CV page header -->
+    <div class="cv-header">
+      <h1>Benjamin Litterer</h1>
+      <div class="cv-contact">
+        <a href="mailto:blitt@umich.edu">blitt@umich.edu</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/blitt2018">github</a>
+      </div>
+    </div>
+
+    <div class="cv-body">
+
+      <!-- Education -->
+      <div class="cv-label">Education</div>
+      <div class="cv-section">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">University of Michigan</span>
+            <span class="cv-entry-date">Expected Spring 2027</span>
+          </div>
+          <div class="cv-entry-role">Doctor of Philosophy — School of Information</div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Iowa State University</span>
+            <span class="cv-entry-date">Spring 2022</span>
+          </div>
+          <div class="cv-entry-role">B.S. Data Science &amp; B.A. French</div>
+          <p>GPA 3.97</p>
+        </div>
+
+      </div>
+
+      <!-- Skills -->
+      <div class="cv-label">Skills</div>
+      <div class="cv-section">
+        <ul class="cv-skills-grid no-bullet">
+          <li>Natural Language Processing</li>
+          <li>Masked &amp; Causal Language Modeling</li>
+          <li>Topic Modelling</li>
+          <li>PyTorch, Deep Neural Networks</li>
+          <li>Python, Pandas, scikit-learn</li>
+          <li>R, ggplot2, dplyr, tidyr</li>
+          <li>SQL / MySQL</li>
+          <li>Hadoop, Apache Spark</li>
+          <li>Causal Inference</li>
+          <li>Bayesian &amp; Multilevel Models</li>
+          <li>PCA, SVD, Cluster Analysis</li>
+          <li>Ridge, Lasso, Logistic Regression</li>
+          <li>Bootstrapping &amp; Permutation Tests</li>
+          <li>Bash scripting</li>
+          <li>Java</li>
+        </ul>
+      </div>
+
+      <!-- Research -->
+      <div class="cv-label">Research</div>
+      <div class="cv-section">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">University of Michigan, School of Information</span>
+            <span class="cv-entry-date">Aug 2022 – Present</span>
+          </div>
+          <div class="cv-entry-role">Graduate Research Assistant</div>
+          <ul>
+            <li>Independent research in NLP and communication; training large language models on diverse news corpora</li>
+            <li>Exploratory and statistical analysis of network, time-series, and cluster data</li>
+            <li>Built large-scale podcast transcription pipeline and podcast database</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Public Science Collaborative, Iowa State</span>
+            <span class="cv-entry-date">Sep 2021 – Aug 2022</span>
+          </div>
+          <div class="cv-entry-role">Research Assistant</div>
+          <ul>
+            <li>Public health and sociological data analysis under Dr. Shawn &amp; Cassandra Dorius</li>
+            <li>NLP and text classification on stakeholder feedback from Iowa communities</li>
+            <li>Geospatial and time-series analysis of violent crime data</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Worcester Polytechnic Institute, CS Dept.</span>
+            <span class="cv-entry-date">Jun – Aug 2021</span>
+          </div>
+          <div class="cv-entry-role">NSF REU Research Assistant</div>
+          <ul>
+            <li>BERT-based classification of text message data for mental health applications</li>
+            <li>Survey design and analysis for evaluating deep learning models (GANs)</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Public Science Collaborative, Iowa State</span>
+            <span class="cv-entry-date">Jan – May 2021</span>
+          </div>
+          <div class="cv-entry-role">Data Science Intern</div>
+          <ul>
+            <li>Analyzed survey data from people who use drugs in Iowa</li>
+            <li>Drafted actionable policy briefs for a public health advisory board</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Jernigan Lab, Iowa State (BBMB)</span>
+            <span class="cv-entry-date">Jan 2019 – May 2022</span>
+          </div>
+          <div class="cv-entry-role">Research Assistant</div>
+          <ul>
+            <li>Computational prediction of protein functions via sequence alignment and NLP</li>
+            <li>Statistical methods: clustering, dimensionality reduction, classification, linear modelling</li>
+            <li>Managed datasets &gt;100 GB; contributed to grant writing and literature review</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Publications -->
+      <div class="cv-label">Publications</div>
+      <div class="cv-section">
+        <p class="cv-pub">
+          <strong>Litterer, B.</strong>, Jurgens, D., &amp; Card, D. (2025). Mapping the Podcast Ecosystem with the Structured Podcast Research Corpus  <em>ACL 2025</em>, pp. 25132-25154.
+        </p>
+        
+        <p class="cv-pub">
+          <strong>Litterer, B.</strong>, Jurgens, D., &amp; Card, D. (2025). Coordinating chaos: A Structured Review of Linguistic Coordination Methodologies <em>ACL 2025</em>, pp. 24984-24999.
+        </p>
+
+        <p class="cv-pub">
+          <strong>Litterer, B.</strong>, Jurgens, D., &amp; Card, D. (2023). When it Rains, it Pours: Modeling Media Storms and the News Ecosystem. <em>Findings of ACL: EMNLP 2023</em>, pp. 6346–6361.
+        </p>
+        <p class="cv-pub">
+          Ananthasubramaniam, A., Chen, H., Yan, J., Alkiek, K., Pei, J., Seth, A., Dunagan, L., Choi, M., <strong>Litterer, B.</strong>, &amp; Jurgens, D. (2023). Exploring Linguistic Style Matching in Online Communities. <em>Proceedings of SICon 2023</em>, pp. 64–74.
+        </p>
+        <p class="cv-pub">
+          Tlachac, ML., Gerych, W., Agrawal, K., <strong>Litterer, B.</strong>, et al. (2022). Text Generation to Aid Depression Detection. <em>IEEE International Conference on Big Data</em>, pp. 2804–2813.
+        </p>
+        <p class="cv-pub">
+          Tlachac, ML., Shrestha, A., Shah, M., <strong>Litterer, B.</strong>, &amp; Rundensteiner, E. (2022). Automated Construction of Lexicons to Improve Depression Screening. <em>IEEE J. Biomed. Health Informatics</em>, 27(6), 2751–2759.
+        </p>
+        <p class="cv-pub">
+          Jia, K., <strong>Litterer, B.</strong>, &amp; Jernigan, L. (2020). Broad Concepts from Polymers Applied to Protein Data. In <em>Modern Applications of Flory's "Statistical Mechanics of Chain Molecules"</em>. ACS.
+        </p>
+
+      </div>
+
+      <!-- Awards -->
+      <div class="cv-label">Awards</div>
+      <div class="cv-section">
+        <div class="cv-award-row"><span>Fulbright Scholarship Semifinalist</span><span class="cv-entry-date">Spring 2022</span></div>
+        <div class="cv-award-row"><span>Goldwater Scholar</span><span class="cv-entry-date">Fall 2021</span></div>
+        <div class="cv-award-row"><span>Kingland Data Analytics Scholarship</span><span class="cv-entry-date">Fall 2021</span></div>
+        <div class="cv-award-row"><span>Phi Beta Kappa Honors Society</span><span class="cv-entry-date">Spring 2020</span></div>
+        <div class="cv-award-row"><span>Hagan Scholar</span><span class="cv-entry-date">2018–2022</span></div>
+        <div class="cv-award-row"><span>Best Poster Content — WPI REU</span><span class="cv-entry-date">Summer 2021</span></div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="cv-label">Leadership</div>
+      <div class="cv-section">
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Doctoral Executive Committee, UMich SI</span>
+            <span class="cv-entry-date">May 2023 – Present</span>
+          </div>
+          <ul>
+            <li>Facilitated doctoral town halls, feedback synthesis, and monthly meetings with the program committee</li>
+            <li>Assisted with incoming student orientation</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Mutual Aid Network of Ypsilanti</span>
+            <span class="cv-entry-date">Aug 2022 – Present</span>
+          </div>
+          <div class="cv-entry-role">Food Pantry Volunteer</div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">"Food at First" Community Food Bank</span>
+            <span class="cv-entry-date">Nov 2020 – Aug 2022</span>
+          </div>
+          <div class="cv-entry-role">Volunteer — &gt;100 hours of service</div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">ISU Honors Program</span>
+            <span class="cv-entry-date">Jan – Dec 2020</span>
+          </div>
+          <div class="cv-entry-role">Undergraduate Assistant</div>
+          <ul>
+            <li>Assisted with hiring 72 first-year seminar leaders; co-led HON 302 leadership courses</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-org">Calculus I Tutor, Iowa State</span>
+            <span class="cv-entry-date">Jan – Apr 2019</span>
+          </div>
+          <ul>
+            <li>Bi-weekly small-group sessions; rated 5/5 in reliability, preparedness, and inclusivity</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Language -->
+      <div class="cv-label">Language</div>
+      <div class="cv-section">
+        <p><strong>French</strong> — 4 years high school, 4 years undergraduate, ~4 months immersion. "2018 Outstanding World Language Student."</p>
+      </div>
+
+    </div><!-- /cv-body -->
+  </div><!-- /cv-wrapper -->
+
+</div><!-- /content -->
+</div><!-- /wrapper -->
+
+</body>
+</html>

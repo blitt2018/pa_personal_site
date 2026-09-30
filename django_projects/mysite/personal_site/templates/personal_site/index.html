@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Ben Litterer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'personal_site/css/style.css' %}"/>
+</head>
+<body>
+<header class="header">
+    <div class="links">
+        <a href="{% url 'index' %}">Ben Litterer</a>
+      <span class="divider">|</span>
+      <a href="{% url 'cv' %}">cv</a>
+    </div>
+  </header>
+
+<h1 class="title toc-ignore">Ben Litterer</h1>
+
+</div>
+
+<div class="hello_container">
+    <div class=photo_col> 
+     <img class="personal_photo", src="{% static 'personal_site/images/headshot.jpg' %}"  alt="Ben Litterer">
+     <div class="links"> 
+         <a href="https://github.com/blitt2018">github</a>
+         <span class="dot">·</span>
+         <a href="mailto: [blitt@umich.edu]?subject= &body= ">email</a> 
+     </div> 
+    </div>
+      <p>
+        I’m a fifth-year PhD Candidate at the University of Michigan, where I
+        work with <a href="https://dallascard.github.io//">Dallas Card</a> and
+        <a href="https://jurgens.people.si.umich.edu/">David Jurgens</a>. My
+        work focuses on applying Natural Language Processing and other computational 
+        tools to better understand media, communication, and politics.
+        This includes analyzing the development of large media stories 
+        across hundreds of outlets (<a href="https://aclanthology.org/2023.findings-emnlp.420/">ACL Findings 2023</a>), 
+        mapping the guest networks created by appearances on millions of podcasts (<a href="https://aclanthology.org/2025.acl-long.1222/">ACL 2025</a>), and 
+        reviewing techniques to measure similarity between two people in a conversation (<a href="https://aclanthology.org/2025.acl-long.1216/">ACL 2025</a>). 
+        <span class="job_market">I'm planning to earn my PhD in Spring 2026 and am currently on the job market looking for post-docs and research positions
+        relating to NLP, political science, and media. 
+        If you’d like to get in touch, you can email me at blitt@umich.edu !
+        </span>
+    </div>
+
+  <h1>Active projects: </h1>
+  <p>
+  My current work focuses explicitly on how politicians communicate in alternative media: 
+  </p>
+  <ul>
+      <li>
+      <span class="current_work_q">Have conservatives truly won the podcast ecosystem?</span>
+      <p>We're mapping where U.S. politicians have appeared, with a particular focus on the ideological slant and 
+      popularity of these podcasts. My particular interest here is understanding whether rumors of conservative dominance are 
+      accurate, and connecting partisan dynamics within the podcast space to more established formats such as radio and television.<p> 
+      </li>
+      
+      <li>
+      <span class="current_work_q">Is tough journalism disincentivized?</span>
+      <p>This project focuses on measuring not just the prevalence of journalists challenging politicians on podcasts, 
+      but also the consequences of this behavior over time. While both parties may accuse the other side of media bias, 
+      I'm interested in trying to understand whether "softball-question" interviewing is incentivized with regard to 
+      guest retention, audience size, and ratings.<p> 
+      </li>
+
+  </ul>
+
+<div id="personal-background" class="section level1">
+  <h1>Personal Background</h1>
+
+  <p>
+    Before starting my PhD, I completed my undergraduate degree at Iowa
+    State University. During this time I worked with
+    <a href="https://www.bbmb.iastate.edu/people/robert-jernigan">
+      Robert Jernigan
+    </a>
+    on problems in Computational Biology, with a focus on the
+    identification of the function of proteins. I also spent time working
+    with
+    <a href="https://soc-cj.iastate.edu/profiles/shawn-dorius/">
+      Shawn Dorius
+    </a>
+    and
+    <a href="https://www.datascience.iastate.edu/people/cassandra-dorius">
+      Cassandra Dorius
+    </a>
+    at the Public Science Collaborative studying substance-use and
+    community health in Iowa. Finally, I completed a Research Experience for Undergradueates 
+    at Worcester Polytechnic Institute working on NLP applications for mental health,
+    where I was advised by
+    <a href="https://www.bryant.edu/academics/faculty/tlachac-ml">
+      ML Tlachac
+    </a>
+    and
+    <a href="https://www.wpi.edu/people/faculty/rundenst">
+      Elke Rundensteiner
+    </a>. I currently live in Ann Arbor Michigan where I've been a PhD student for 4 years. When I'm 
+    not thinking about computation and communication, I spend my time making music with my band Maxine, putting  
+    records on, and reading. 
+  </p>
+</div>
+
+</body>
+</html>
